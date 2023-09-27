@@ -31,7 +31,7 @@ user=0
 computer=0
 while True:
     images=[Rock,Paper,Scissors]
-    user_turn = int(input("Enter your choices: if Rock enter 0, Paper enter 1, Scissor enter 2"))
+    user_turn = int(input("Enter your choices: if Rock enter 0, Paper enter 1, Scissor enter 2 : "))
     if(user_turn<0) or (user_turn>=3):
         print("You entered Invalid number. Please enter valid number that is 0 or 1 or 2")
     else:
@@ -55,7 +55,7 @@ while True:
             print("User(YOU) Wins!!")
             user+=1
 
-        print("if you want to continue the game? enter YES or NO")
+        print("if you want to continue the game? enter YES or NO : ")
         continue_game=input()
         if(continue_game.lower()!='yes'):
             print("Your total score is :",user)
